@@ -1,4 +1,4 @@
-FROM python:2
+FROM python:2 as crawl-builder
 MAINTAINER dididi <dfdgsdfg@gmail.com>
 
 ENV HOME /root
@@ -27,7 +27,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN pip install tornado==3.2.2
+RUN pip install tornado==3.2.2 pyyaml
 
 WORKDIR /root
 RUN git clone ${CRAWL_GIT_REPO} --depth 1
@@ -49,9 +49,15 @@ RUN sed -i '/filename/ s|webtiles.log|/data/webtiles.log|' config.py
 # RUN sed -i '/crypt_algorithm/ s|broken|6|' config.py
 # RUN sed -i '/crypt_salt_length/ s|16|16|' config.py
 
+FROM python:2
+
+# Only copy over the binary and the webserver
 WORKDIR /root/crawl/crawl-ref/source
+RUN pip install tornado==3.2.2 pyyaml
+COPY --from=crawl-builder /root/crawl/crawl-ref/source/crawl crawl
+COPY --from=crawl-builder /root/crawl/crawl-ref/source/crawl/webserver webserver
+
 CMD python webserver/server.py
 
 VOLUME ["/data"]
 EXPOSE 80 443
-

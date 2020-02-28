@@ -5,7 +5,8 @@ ENV HOME /root
 ENV LC_ALL C.UTF-8
 
 ARG CRAWL_GIT_REPO=https://github.com/crawl/crawl
-ARG CRAWL_VERSION=master
+ARG CRAWL_VERSION=0.1.0
+ARG CRAWL_BRANCH=master
 
 RUN apt-get update && \
     apt-get -y install build-essential \
@@ -33,13 +34,16 @@ WORKDIR /root
 RUN git clone ${CRAWL_GIT_REPO} --depth 1
  
 WORKDIR /root/crawl
-RUN git fetch origin ${CRAWL_VERSION}
-RUN git checkout ${CRAWL_VERSION}
+RUN git fetch origin ${CRAWL_BRANCH}
+RUN git checkout ${CRAWL_BRANCH}
 RUN git submodule update --init
 
 WORKDIR /root/crawl/crawl-ref/source
-RUN make WEBTILES=y USE_DGAMELAUNCH=y
-RUN mkdir rcs
+
+# util/release_ver must exist; use branch / tag as a release version
+RUN echo "${CRAWL_VERSION}" > util/release_ver
+
+RUN make -j4 WEBTILES=y USE_DGAMELAUNCH=y
 
 WORKDIR /root/crawl/crawl-ref/source/webserver
 RUN sed -i '/bind_port/ s|8080|80|' config.py
@@ -48,15 +52,8 @@ RUN sed -i '/filename/ s|#||' config.py
 RUN sed -i '/filename/ s|webtiles.log|/data/webtiles.log|' config.py
 # RUN sed -i '/crypt_algorithm/ s|broken|6|' config.py
 # RUN sed -i '/crypt_salt_length/ s|16|16|' config.py
-
-FROM python:2
-
-# Only copy over the binary and the webserver
 WORKDIR /root/crawl/crawl-ref/source
-RUN pip install tornado==3.2.2 pyyaml
-COPY --from=crawl-builder /root/crawl/crawl-ref/source/crawl crawl
-COPY --from=crawl-builder /root/crawl/crawl-ref/source/crawl/webserver webserver
-
+RUN mkdir ../rcs
 CMD python webserver/server.py
 
 VOLUME ["/data"]

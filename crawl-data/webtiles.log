@@ -1,0 +1,375 @@
+2020-02-28 01:50:17,795 INFO: Listening on :80
+2020-02-28 01:50:17,798 WARN: User database didn't exist; creating it now.
+2020-02-28 01:50:17,854 WARN: User settings database didn't exist at '/data/user_settings.db3'; creating it now.
+2020-02-28 01:50:17,865 INFO: Webtiles server started! (PID: 6)
+2020-02-28 01:50:22,054 INFO: 304 GET / (172.17.0.1) 18.46ms
+2020-02-28 01:50:22,116 INFO: 304 GET /static/scripts/contrib/require.js (172.17.0.1) 4.42ms
+2020-02-28 01:50:22,119 INFO: 304 GET /static/style.css (172.17.0.1) 1.01ms
+2020-02-28 01:50:22,289 INFO: 304 GET /static/scripts/app.js (172.17.0.1) 0.78ms
+2020-02-28 01:50:22,431 INFO: 304 GET /static/scripts/contrib/jquery.js (172.17.0.1) 0.77ms
+2020-02-28 01:50:22,433 INFO: 200 GET /static/stone_soup_icon-32x32.png (172.17.0.1) 0.74ms
+2020-02-28 01:50:22,452 INFO: 304 GET /static/scripts/client.js (172.17.0.1) 0.77ms
+2020-02-28 01:50:22,476 INFO: 304 GET /static/scripts/key_conversion.js (172.17.0.1) 1.56ms
+2020-02-28 01:50:22,480 INFO: 304 GET /static/scripts/contrib/jquery.cookie.js (172.17.0.1) 0.91ms
+2020-02-28 01:50:22,484 INFO: 304 GET /static/scripts/comm.js (172.17.0.1) 0.93ms
+2020-02-28 01:50:22,486 INFO: 304 GET /static/scripts/contrib/jquery.waitforimages.js (172.17.0.1) 0.86ms
+2020-02-28 01:50:22,489 INFO: 304 GET /static/scripts/contrib/jquery.tablesorter.js (172.17.0.1) 0.69ms
+2020-02-28 01:50:22,492 INFO: 304 GET /static/scripts/chat.js (172.17.0.1) 0.75ms
+2020-02-28 01:50:22,495 INFO: 304 GET /static/scripts/contrib/inflate.js (172.17.0.1) 0.94ms
+2020-02-28 01:50:22,543 INFO: 304 GET /static/scripts/contrib/jquery.json.js (172.17.0.1) 0.72ms
+2020-02-28 01:50:22,554 INFO: 304 GET /static/scripts/linkify.js (172.17.0.1) 1.35ms
+2020-02-28 01:50:22,566 INFO: 304 GET /static/scripts/contrib/ba-linkify.min.js (172.17.0.1) 1.38ms
+2020-02-28 01:50:22,582 INFO: #0     Socket opened from ip 172.17.0.1 (fd16, compression: on).
+2020-02-28 01:50:30,940 INFO: #0     Registered user will.
+2020-02-28 01:50:30,950 WARN: #0     Error while handling JSON message!
+Traceback (most recent call last):
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 636, in on_message
+    handler(**obj)
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 550, in register
+    self.do_login(username)
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 380, in do_login
+    if not self.init_user():
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 357, in init_user
+    stdout = f, stderr = subprocess.STDOUT)
+  File "/usr/local/lib/python2.7/subprocess.py", line 172, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/local/lib/python2.7/subprocess.py", line 394, in __init__
+    errread, errwrite)
+  File "/usr/local/lib/python2.7/subprocess.py", line 1047, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+2020-02-28 01:50:32,565 INFO: #0     Registration attempt failed for username will: User already exists!
+2020-02-28 01:50:38,122 INFO: #0     User will logged in from 172.17.0.1.
+2020-02-28 01:50:38,131 WARN: #0     Error while handling JSON message!
+Traceback (most recent call last):
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 636, in on_message
+    handler(**obj)
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 401, in login
+    self.do_login(real_username)
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 380, in do_login
+    if not self.init_user():
+  File "/root/crawl/crawl-ref/source/webserver/ws_handler.py", line 357, in init_user
+    stdout = f, stderr = subprocess.STDOUT)
+  File "/usr/local/lib/python2.7/subprocess.py", line 172, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/local/lib/python2.7/subprocess.py", line 394, in __init__
+    errread, errwrite)
+  File "/usr/local/lib/python2.7/subprocess.py", line 1047, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+2020-02-28 01:57:41,814 INFO: Listening on :80
+2020-02-28 01:57:41,824 INFO: Webtiles server started! (PID: 7)
+2020-02-28 01:57:46,354 INFO: 304 GET / (172.17.0.1) 14.05ms
+2020-02-28 01:57:46,411 INFO: 304 GET /static/style.css (172.17.0.1) 5.52ms
+2020-02-28 01:57:46,415 INFO: 304 GET /static/scripts/contrib/require.js (172.17.0.1) 1.19ms
+2020-02-28 01:57:46,558 INFO: 304 GET /static/scripts/app.js (172.17.0.1) 0.93ms
+2020-02-28 01:57:46,694 INFO: 304 GET /static/scripts/contrib/jquery.js (172.17.0.1) 0.77ms
+2020-02-28 01:57:46,717 INFO: 304 GET /static/scripts/client.js (172.17.0.1) 0.89ms
+2020-02-28 01:57:46,736 INFO: 304 GET /static/scripts/comm.js (172.17.0.1) 0.72ms
+2020-02-28 01:57:46,739 INFO: 304 GET /static/scripts/contrib/jquery.cookie.js (172.17.0.1) 0.71ms
+2020-02-28 01:57:46,742 INFO: 304 GET /static/scripts/chat.js (172.17.0.1) 0.66ms
+2020-02-28 01:57:46,744 INFO: 304 GET /static/scripts/key_conversion.js (172.17.0.1) 0.81ms
+2020-02-28 01:57:46,746 INFO: 304 GET /static/scripts/contrib/jquery.waitforimages.js (172.17.0.1) 0.67ms
+2020-02-28 01:57:46,749 INFO: 304 GET /static/scripts/contrib/jquery.tablesorter.js (172.17.0.1) 1.06ms
+2020-02-28 01:57:46,751 INFO: 304 GET /static/scripts/contrib/inflate.js (172.17.0.1) 0.94ms
+2020-02-28 01:57:46,788 INFO: 304 GET /static/scripts/linkify.js (172.17.0.1) 0.55ms
+2020-02-28 01:57:46,791 INFO: 304 GET /static/scripts/contrib/jquery.json.js (172.17.0.1) 0.70ms
+2020-02-28 01:57:46,806 INFO: 304 GET /static/scripts/contrib/ba-linkify.min.js (172.17.0.1) 0.54ms
+2020-02-28 01:57:46,849 INFO: #0     Socket opened from ip 172.17.0.1 (fd16, compression: on).
+2020-02-28 01:57:46,924 INFO: 304 GET /static/stone_soup_icon-32x32.png (172.17.0.1) 1.54ms
+2020-02-28 01:57:53,211 INFO: #0     Registration attempt failed for username will: User already exists!
+2020-02-28 01:57:57,357 INFO: #0     User will logged in from 172.17.0.1.
+2020-02-28 01:57:57,377 WARN: #0     User initialization returned an error for user will!
+2020-02-28 01:58:23,990 INFO: 304 GET / (172.17.0.1) 1.10ms
+2020-02-28 01:58:24,440 INFO: #1     Socket opened from ip 172.17.0.1 (fd16, compression: on).
+2020-02-28 01:58:24,453 INFO: 200 GET /static/stone_soup_icon-32x32.png (172.17.0.1) 1.68ms
+2020-02-28 01:58:40,213 INFO: #1     Registered user mars.
+2020-02-28 01:58:40,233 WARN: #1     User initialization returned an error for user mars!
+2020-02-28 02:00:55,065 INFO: Listening on :80
+2020-02-28 02:00:55,074 INFO: Webtiles server started! (PID: 6)
+2020-02-28 02:00:57,911 INFO: 304 GET / (172.17.0.1) 14.85ms
+2020-02-28 02:00:57,955 INFO: 304 GET /static/style.css (172.17.0.1) 9.90ms
+2020-02-28 02:00:57,960 INFO: 304 GET /static/scripts/contrib/require.js (172.17.0.1) 1.03ms
+2020-02-28 02:00:58,066 INFO: 304 GET /static/scripts/app.js (172.17.0.1) 0.59ms
+2020-02-28 02:00:58,204 INFO: 304 GET /static/scripts/contrib/jquery.js (172.17.0.1) 0.77ms
+2020-02-28 02:00:58,224 INFO: 304 GET /static/scripts/client.js (172.17.0.1) 0.77ms
+2020-02-28 02:00:58,245 INFO: 304 GET /static/scripts/chat.js (172.17.0.1) 1.36ms
+2020-02-28 02:00:58,249 INFO: 304 GET /static/scripts/key_conversion.js (172.17.0.1) 0.90ms
+2020-02-28 02:00:58,253 INFO: 304 GET /static/scripts/contrib/jquery.tablesorter.js (172.17.0.1) 0.67ms
+2020-02-28 02:00:58,256 INFO: 304 GET /static/scripts/contrib/jquery.waitforimages.js (172.17.0.1) 0.87ms
+2020-02-28 02:00:58,259 INFO: 304 GET /static/scripts/contrib/jquery.cookie.js (172.17.0.1) 1.10ms
+2020-02-28 02:00:58,263 INFO: 304 GET /static/scripts/comm.js (172.17.0.1) 0.99ms
+2020-02-28 02:00:58,267 INFO: 304 GET /static/scripts/contrib/inflate.js (172.17.0.1) 1.11ms
+2020-02-28 02:00:58,294 INFO: 304 GET /static/scripts/linkify.js (172.17.0.1) 0.99ms
+2020-02-28 02:00:58,300 INFO: 304 GET /static/scripts/contrib/jquery.json.js (172.17.0.1) 0.92ms
+2020-02-28 02:00:58,308 INFO: 304 GET /static/scripts/contrib/ba-linkify.min.js (172.17.0.1) 0.99ms
+2020-02-28 02:00:58,323 INFO: #0     Socket opened from ip 172.17.0.1 (fd16, compression: on).
+2020-02-28 02:01:09,380 INFO: #0     Registered user mattia.
+2020-02-28 02:01:10,575 INFO: 304 GET /static/stone_soup_icon-32x32.png (172.17.0.1) 0.73ms
+2020-02-28 02:01:17,178 INFO: #0     P1     Starting dcss-web-trunk.
+2020-02-28 02:01:17,188 INFO: #0     P1     Crawl FDs: fd20, fd18.
+2020-02-28 02:01:17,232 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/style.css (172.17.0.1) 3.90ms
+2020-02-28 02:01:17,236 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.css (172.17.0.1) 2.22ms
+2020-02-28 02:01:17,245 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/main.png (172.17.0.1) 5.59ms
+2020-02-28 02:01:17,254 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/floor.png (172.17.0.1) 7.95ms
+2020-02-28 02:01:17,261 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/feat.png (172.17.0.1) 5.34ms
+2020-02-28 02:01:17,277 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/wall.png (172.17.0.1) 12.51ms
+2020-02-28 02:01:17,289 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/icons.png (172.17.0.1) 2.43ms
+2020-02-28 02:01:17,304 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.png (172.17.0.1) 11.28ms
+2020-02-28 02:01:17,311 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/gui.png (172.17.0.1) 4.29ms
+2020-02-28 02:01:17,322 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/game.js (172.17.0.1) 2.32ms
+2020-02-28 02:01:17,365 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/dungeon_renderer.js (172.17.0.1) 2.38ms
+2020-02-28 02:01:17,369 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/messages.js (172.17.0.1) 1.84ms
+2020-02-28 02:01:17,375 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/enums.js (172.17.0.1) 2.15ms
+2020-02-28 02:01:17,377 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/display.js (172.17.0.1) 1.13ms
+2020-02-28 02:01:17,380 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/minimap.js (172.17.0.1) 1.19ms
+2020-02-28 02:01:17,386 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/options.js (172.17.0.1) 1.38ms
+2020-02-28 02:01:17,390 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/text.js (172.17.0.1) 1.44ms
+2020-02-28 02:01:17,397 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/menu.js (172.17.0.1) 3.45ms
+2020-02-28 02:01:17,406 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui.js (172.17.0.1) 2.25ms
+2020-02-28 02:01:17,413 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/mouse_control.js (172.17.0.1) 1.63ms
+2020-02-28 02:01:17,431 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.js (172.17.0.1) 3.55ms
+2020-02-28 02:01:17,453 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui-layouts.js (172.17.0.1) 8.05ms
+2020-02-28 02:01:17,456 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/util.js (172.17.0.1) 1.98ms
+2020-02-28 02:01:17,460 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/map_knowledge.js (172.17.0.1) 1.20ms
+2020-02-28 02:01:17,464 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-dngn.js (172.17.0.1) 1.72ms
+2020-02-28 02:01:17,468 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/view_data.js (172.17.0.1) 1.45ms
+2020-02-28 02:01:17,477 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/cell_renderer.js (172.17.0.1) 5.67ms
+2020-02-28 02:01:17,482 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/textinput.js (172.17.0.1) 1.75ms
+2020-02-28 02:01:17,491 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/monster_list.js (172.17.0.1) 2.01ms
+2020-02-28 02:01:17,551 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-player.js (172.17.0.1) 57.77ms
+2020-02-28 02:01:17,575 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-main.js (172.17.0.1) 22.26ms
+2020-02-28 02:01:17,578 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/scroller.js (172.17.0.1) 1.44ms
+2020-02-28 02:01:17,583 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/focus-trap.js (172.17.0.1) 2.26ms
+2020-02-28 02:01:17,600 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-gui.js (172.17.0.1) 13.81ms
+2020-02-28 02:01:17,615 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-floor.js (172.17.0.1) 12.65ms
+2020-02-28 02:01:17,642 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-wall.js (172.17.0.1) 26.19ms
+2020-02-28 02:01:17,667 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-feat.js (172.17.0.1) 20.29ms
+2020-02-28 02:01:17,674 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-icons.js (172.17.0.1) 2.92ms
+2020-02-28 02:01:17,683 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfos.js (172.17.0.1) 4.91ms
+2020-02-28 02:01:17,697 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.js (172.17.0.1) 11.45ms
+2020-02-28 02:01:18,994 INFO: #0     P1     ERR: ./crawl: error while loading shared libraries: liblua5.1.so.0: cannot open shared object file: No such file or directory
+2020-02-28 02:01:18,996 INFO: #0     P1     Crawl terminated.
+2020-02-28 02:06:27,111 INFO: Listening on :80
+2020-02-28 02:06:27,123 INFO: Webtiles server started! (PID: 7)
+2020-02-28 02:06:32,390 INFO: 304 GET / (172.17.0.1) 13.54ms
+2020-02-28 02:06:32,435 INFO: 304 GET /static/style.css (172.17.0.1) 5.19ms
+2020-02-28 02:06:32,439 INFO: 304 GET /static/scripts/contrib/require.js (172.17.0.1) 1.33ms
+2020-02-28 02:06:32,554 INFO: 304 GET /static/scripts/app.js (172.17.0.1) 0.60ms
+2020-02-28 02:06:32,724 INFO: 304 GET /static/scripts/contrib/jquery.js (172.17.0.1) 1.23ms
+2020-02-28 02:06:32,741 INFO: 200 GET /static/stone_soup_icon-32x32.png (172.17.0.1) 0.94ms
+2020-02-28 02:06:32,754 INFO: 304 GET /static/scripts/client.js (172.17.0.1) 0.91ms
+2020-02-28 02:06:32,824 INFO: 304 GET /static/scripts/key_conversion.js (172.17.0.1) 1.61ms
+2020-02-28 02:06:32,829 INFO: 304 GET /static/scripts/chat.js (172.17.0.1) 1.29ms
+2020-02-28 02:06:32,832 INFO: 304 GET /static/scripts/contrib/jquery.cookie.js (172.17.0.1) 1.12ms
+2020-02-28 02:06:32,837 INFO: 304 GET /static/scripts/comm.js (172.17.0.1) 1.64ms
+2020-02-28 02:06:32,840 INFO: 304 GET /static/scripts/contrib/jquery.tablesorter.js (172.17.0.1) 0.96ms
+2020-02-28 02:06:32,843 INFO: 304 GET /static/scripts/contrib/jquery.waitforimages.js (172.17.0.1) 1.23ms
+2020-02-28 02:06:32,854 INFO: 304 GET /static/scripts/contrib/inflate.js (172.17.0.1) 4.61ms
+2020-02-28 02:06:32,858 INFO: 304 GET /static/scripts/linkify.js (172.17.0.1) 1.02ms
+2020-02-28 02:06:32,862 INFO: 304 GET /static/scripts/contrib/jquery.json.js (172.17.0.1) 1.00ms
+2020-02-28 02:06:32,871 INFO: 304 GET /static/scripts/contrib/ba-linkify.min.js (172.17.0.1) 0.70ms
+2020-02-28 02:06:32,885 INFO: #0     Socket opened from ip 172.17.0.1 (fd16, compression: on).
+2020-02-28 02:06:40,256 INFO: #0     User mars logged in from 172.17.0.1.
+2020-02-28 02:06:42,792 INFO: #0     P1     Starting dcss-web-trunk.
+2020-02-28 02:06:42,797 INFO: #0     P1     Crawl FDs: fd20, fd18.
+2020-02-28 02:06:42,837 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/style.css (172.17.0.1) 4.56ms
+2020-02-28 02:06:42,846 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/main.png (172.17.0.1) 5.71ms
+2020-02-28 02:06:42,853 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/feat.png (172.17.0.1) 4.83ms
+2020-02-28 02:06:42,873 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/wall.png (172.17.0.1) 17.67ms
+2020-02-28 02:06:42,901 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/floor.png (172.17.0.1) 23.15ms
+2020-02-28 02:06:42,909 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.css (172.17.0.1) 4.35ms
+2020-02-28 02:06:42,936 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.png (172.17.0.1) 16.84ms
+2020-02-28 02:06:42,942 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/icons.png (172.17.0.1) 2.93ms
+2020-02-28 02:06:42,952 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/gui.png (172.17.0.1) 4.99ms
+2020-02-28 02:06:42,958 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/game.js (172.17.0.1) 2.85ms
+2020-02-28 02:06:42,987 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/dungeon_renderer.js (172.17.0.1) 3.46ms
+2020-02-28 02:06:42,995 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/display.js (172.17.0.1) 1.88ms
+2020-02-28 02:06:42,999 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/minimap.js (172.17.0.1) 2.26ms
+2020-02-28 02:06:43,003 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/options.js (172.17.0.1) 2.17ms
+2020-02-28 02:06:43,009 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/messages.js (172.17.0.1) 1.23ms
+2020-02-28 02:06:43,013 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/enums.js (172.17.0.1) 2.18ms
+2020-02-28 02:06:43,018 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/text.js (172.17.0.1) 2.62ms
+2020-02-28 02:06:43,023 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/mouse_control.js (172.17.0.1) 2.82ms
+2020-02-28 02:06:43,027 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.js (172.17.0.1) 2.26ms
+2020-02-28 02:06:43,032 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/menu.js (172.17.0.1) 3.64ms
+2020-02-28 02:06:43,048 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui-layouts.js (172.17.0.1) 12.47ms
+2020-02-28 02:06:43,058 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui.js (172.17.0.1) 2.41ms
+2020-02-28 02:06:43,072 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/cell_renderer.js (172.17.0.1) 12.15ms
+2020-02-28 02:06:43,078 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/util.js (172.17.0.1) 1.24ms
+2020-02-28 02:06:43,082 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-dngn.js (172.17.0.1) 2.00ms
+2020-02-28 02:06:43,087 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/view_data.js (172.17.0.1) 1.72ms
+2020-02-28 02:06:43,092 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/monster_list.js (172.17.0.1) 2.36ms
+2020-02-28 02:06:43,096 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/map_knowledge.js (172.17.0.1) 1.53ms
+2020-02-28 02:06:43,154 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-player.js (172.17.0.1) 53.19ms
+2020-02-28 02:06:43,158 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/textinput.js (172.17.0.1) 1.61ms
+2020-02-28 02:06:43,184 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-main.js (172.17.0.1) 23.45ms
+2020-02-28 02:06:43,197 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-gui.js (172.17.0.1) 11.03ms
+2020-02-28 02:06:43,201 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/focus-trap.js (172.17.0.1) 2.11ms
+2020-02-28 02:06:43,204 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/scroller.js (172.17.0.1) 1.12ms
+2020-02-28 02:06:43,209 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-icons.js (172.17.0.1) 2.48ms
+2020-02-28 02:06:43,211 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfos.js (172.17.0.1) 0.78ms
+2020-02-28 02:06:43,227 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-floor.js (172.17.0.1) 13.57ms
+2020-02-28 02:06:43,253 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-wall.js (172.17.0.1) 22.90ms
+2020-02-28 02:06:43,268 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-feat.js (172.17.0.1) 11.30ms
+2020-02-28 02:06:43,284 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.js (172.17.0.1) 13.76ms
+2020-02-28 02:06:44,737 INFO: #0     P1     ERR: ./crawl: error while loading shared libraries: liblua5.1.so.0: cannot open shared object file: No such file or directory
+2020-02-28 02:06:44,739 INFO: #0     P1     Crawl terminated.
+2020-02-28 02:06:46,386 INFO: #0     P2     Starting seeded-web-trunk.
+2020-02-28 02:06:46,390 INFO: #0     P2     Crawl FDs: fd20, fd18.
+2020-02-28 02:06:46,440 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/floor.png (172.17.0.1) 4.99ms
+2020-02-28 02:06:46,448 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/feat.png (172.17.0.1) 3.35ms
+2020-02-28 02:06:46,459 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/wall.png (172.17.0.1) 8.32ms
+2020-02-28 02:06:46,474 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/icons.png (172.17.0.1) 1.46ms
+2020-02-28 02:06:46,482 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.png (172.17.0.1) 5.01ms
+2020-02-28 02:06:46,491 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/main.png (172.17.0.1) 5.53ms
+2020-02-28 02:06:46,503 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/style.css (172.17.0.1) 3.02ms
+2020-02-28 02:06:46,512 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.css (172.17.0.1) 1.99ms
+2020-02-28 02:06:46,523 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/gui.png (172.17.0.1) 3.86ms
+2020-02-28 02:06:48,082 INFO: #0     P2     ERR: ./crawl: error while loading shared libraries: liblua5.1.so.0: cannot open shared object file: No such file or directory
+2020-02-28 02:06:48,084 INFO: #0     P2     Crawl terminated.
+2020-02-28 02:06:49,181 INFO: #0     P3     Starting sprint-web-trunk.
+2020-02-28 02:06:49,188 INFO: #0     P3     Crawl FDs: fd20, fd18.
+2020-02-28 02:06:49,235 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/floor.png (172.17.0.1) 5.01ms
+2020-02-28 02:06:49,242 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/main.png (172.17.0.1) 2.58ms
+2020-02-28 02:06:49,247 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/feat.png (172.17.0.1) 2.34ms
+2020-02-28 02:06:49,252 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/icons.png (172.17.0.1) 1.39ms
+2020-02-28 02:06:49,263 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.png (172.17.0.1) 6.82ms
+2020-02-28 02:06:49,272 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/wall.png (172.17.0.1) 4.91ms
+2020-02-28 02:06:49,280 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.css (172.17.0.1) 1.36ms
+2020-02-28 02:06:49,284 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/gui.png (172.17.0.1) 1.59ms
+2020-02-28 02:06:49,292 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/style.css (172.17.0.1) 3.03ms
+2020-02-28 02:06:50,889 INFO: #0     P3     ERR: ./crawl: error while loading shared libraries: liblua5.1.so.0: cannot open shared object file: No such file or directory
+2020-02-28 02:06:50,891 INFO: #0     P3     Crawl terminated.
+2020-02-28 02:08:48,080 INFO: Listening on :80
+2020-02-28 02:08:48,094 WARN: Could not write dgl status file: [Errno 2] No such file or directory: './rcs/status'
+2020-02-28 02:08:48,095 INFO: Webtiles server started! (PID: 7)
+2020-02-28 02:08:51,021 INFO: 304 GET / (172.17.0.1) 14.36ms
+2020-02-28 02:08:51,450 INFO: #0     Socket opened from ip 172.17.0.1 (fd12, compression: on).
+2020-02-28 02:08:53,096 WARN: Could not write dgl status file: [Errno 2] No such file or directory: './rcs/status'
+2020-02-28 02:08:54,086 INFO: #0     User mars logged in from 172.17.0.1.
+2020-02-28 02:08:56,478 INFO: #0     P1     Starting dcss-web-trunk.
+2020-02-28 02:08:56,491 INFO: #0     P1     Crawl FDs: fd16, fd14.
+2020-02-28 02:08:56,561 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/floor.png (172.17.0.1) 10.91ms
+2020-02-28 02:08:56,577 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/wall.png (172.17.0.1) 10.05ms
+2020-02-28 02:08:56,588 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/main.png (172.17.0.1) 6.28ms
+2020-02-28 02:08:56,596 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/feat.png (172.17.0.1) 5.72ms
+2020-02-28 02:08:56,604 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/style.css (172.17.0.1) 3.20ms
+2020-02-28 02:08:56,619 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.png (172.17.0.1) 9.90ms
+2020-02-28 02:08:56,640 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/gui.png (172.17.0.1) 5.14ms
+2020-02-28 02:08:56,647 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.css (172.17.0.1) 2.25ms
+2020-02-28 02:08:56,657 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/icons.png (172.17.0.1) 2.55ms
+2020-02-28 02:08:56,665 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/game.js (172.17.0.1) 2.36ms
+2020-02-28 02:08:56,705 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/dungeon_renderer.js (172.17.0.1) 3.32ms
+2020-02-28 02:08:56,709 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/display.js (172.17.0.1) 1.98ms
+2020-02-28 02:08:56,716 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/enums.js (172.17.0.1) 2.14ms
+2020-02-28 02:08:56,722 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/options.js (172.17.0.1) 2.21ms
+2020-02-28 02:08:56,730 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/minimap.js (172.17.0.1) 2.16ms
+2020-02-28 02:08:56,737 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/messages.js (172.17.0.1) 1.85ms
+2020-02-28 02:08:56,743 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/mouse_control.js (172.17.0.1) 1.36ms
+2020-02-28 02:08:56,748 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.js (172.17.0.1) 3.01ms
+2020-02-28 02:08:56,754 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/menu.js (172.17.0.1) 3.21ms
+2020-02-28 02:08:56,761 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui.js (172.17.0.1) 2.52ms
+2020-02-28 02:08:56,774 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/text.js (172.17.0.1) 2.00ms
+2020-02-28 02:08:56,779 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/map_knowledge.js (172.17.0.1) 1.54ms
+2020-02-28 02:08:56,787 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/cell_renderer.js (172.17.0.1) 5.87ms
+2020-02-28 02:08:56,791 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-dngn.js (172.17.0.1) 2.04ms
+2020-02-28 02:08:56,795 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/util.js (172.17.0.1) 1.88ms
+2020-02-28 02:08:56,802 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui-layouts.js (172.17.0.1) 5.14ms
+2020-02-28 02:08:56,806 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/monster_list.js (172.17.0.1) 1.83ms
+2020-02-28 02:08:56,867 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-player.js (172.17.0.1) 57.81ms
+2020-02-28 02:08:56,900 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-main.js (172.17.0.1) 30.14ms
+2020-02-28 02:08:56,906 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/view_data.js (172.17.0.1) 3.12ms
+2020-02-28 02:08:56,927 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-gui.js (172.17.0.1) 16.70ms
+2020-02-28 02:08:56,931 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/focus-trap.js (172.17.0.1) 2.05ms
+2020-02-28 02:08:56,936 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/textinput.js (172.17.0.1) 1.83ms
+2020-02-28 02:08:56,940 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-icons.js (172.17.0.1) 2.23ms
+2020-02-28 02:08:56,944 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/scroller.js (172.17.0.1) 1.14ms
+2020-02-28 02:08:56,962 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-floor.js (172.17.0.1) 15.18ms
+2020-02-28 02:08:56,974 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-feat.js (172.17.0.1) 9.16ms
+2020-02-28 02:08:56,992 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-wall.js (172.17.0.1) 16.89ms
+2020-02-28 02:08:57,005 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfos.js (172.17.0.1) 0.99ms
+2020-02-28 02:08:57,019 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.js (172.17.0.1) 11.92ms
+2020-02-28 02:08:58,353 INFO: #0     P1     ERR: ./crawl: error while loading shared libraries: liblua5.1.so.0: cannot open shared object file: No such file or directory
+2020-02-28 02:08:58,355 INFO: #0     P1     Crawl terminated.
+2020-02-28 02:09:27,933 INFO: #0     P2     Starting dcss-web-trunk.
+2020-02-28 02:09:27,939 INFO: #0     P2     Crawl FDs: fd16, fd14.
+2020-02-28 02:09:27,991 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/floor.png (172.17.0.1) 6.12ms
+2020-02-28 02:09:28,009 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/icons.png (172.17.0.1) 1.49ms
+2020-02-28 02:09:28,016 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/wall.png (172.17.0.1) 4.67ms
+2020-02-28 02:09:28,021 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/main.png (172.17.0.1) 2.42ms
+2020-02-28 02:09:28,033 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/feat.png (172.17.0.1) 6.05ms
+2020-02-28 02:09:28,050 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.png (172.17.0.1) 9.87ms
+2020-02-28 02:09:28,067 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/style.css (172.17.0.1) 7.10ms
+2020-02-28 02:09:28,077 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.css (172.17.0.1) 3.69ms
+2020-02-28 02:09:28,084 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/gui.png (172.17.0.1) 3.95ms
+2020-02-28 02:09:29,738 INFO: #0     P2     ERR: ./crawl: error while loading shared libraries: liblua5.1.so.0: cannot open shared object file: No such file or directory
+2020-02-28 02:09:29,740 INFO: #0     P2     Crawl terminated.
+2020-02-28 02:11:54,752 INFO: Listening on :80
+2020-02-28 02:11:54,769 WARN: Could not write dgl status file: [Errno 2] No such file or directory: './rcs/status'
+2020-02-28 02:11:54,770 INFO: Webtiles server started! (PID: 7)
+2020-02-28 02:11:56,573 INFO: 304 GET / (172.17.0.1) 15.83ms
+2020-02-28 02:11:56,624 INFO: 304 GET /static/style.css (172.17.0.1) 5.27ms
+2020-02-28 02:11:56,628 INFO: 304 GET /static/scripts/contrib/require.js (172.17.0.1) 0.80ms
+2020-02-28 02:11:56,770 INFO: 304 GET /static/scripts/app.js (172.17.0.1) 0.61ms
+2020-02-28 02:11:56,915 INFO: 304 GET /static/scripts/contrib/jquery.js (172.17.0.1) 0.89ms
+2020-02-28 02:11:56,941 INFO: 304 GET /static/scripts/client.js (172.17.0.1) 1.07ms
+2020-02-28 02:11:56,972 INFO: 304 GET /static/scripts/key_conversion.js (172.17.0.1) 1.33ms
+2020-02-28 02:11:56,978 INFO: 304 GET /static/scripts/chat.js (172.17.0.1) 0.99ms
+2020-02-28 02:11:56,984 INFO: 304 GET /static/scripts/contrib/jquery.cookie.js (172.17.0.1) 1.18ms
+2020-02-28 02:11:56,989 INFO: 304 GET /static/scripts/comm.js (172.17.0.1) 0.99ms
+2020-02-28 02:11:56,992 INFO: 304 GET /static/scripts/contrib/jquery.waitforimages.js (172.17.0.1) 1.12ms
+2020-02-28 02:11:56,995 INFO: 304 GET /static/scripts/contrib/jquery.tablesorter.js (172.17.0.1) 0.84ms
+2020-02-28 02:11:57,000 INFO: 304 GET /static/scripts/contrib/inflate.js (172.17.0.1) 1.28ms
+2020-02-28 02:11:57,015 INFO: 304 GET /static/scripts/linkify.js (172.17.0.1) 0.78ms
+2020-02-28 02:11:57,020 INFO: 304 GET /static/scripts/contrib/jquery.json.js (172.17.0.1) 1.22ms
+2020-02-28 02:11:57,028 INFO: 304 GET /static/scripts/contrib/ba-linkify.min.js (172.17.0.1) 0.63ms
+2020-02-28 02:11:57,058 INFO: #0     Socket opened from ip 172.17.0.1 (fd16, compression: on).
+2020-02-28 02:11:57,086 INFO: 304 GET /static/stone_soup_icon-32x32.png (172.17.0.1) 2.03ms
+2020-02-28 02:11:59,771 WARN: Could not write dgl status file: [Errno 2] No such file or directory: './rcs/status'
+2020-02-28 02:12:01,823 INFO: #0     User mars logged in from 172.17.0.1.
+2020-02-28 02:12:03,017 INFO: #0     P1     Starting dcss-web-trunk.
+2020-02-28 02:12:03,026 INFO: #0     P1     Crawl FDs: fd20, fd18.
+2020-02-28 02:12:03,074 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/floor.png (172.17.0.1) 10.74ms
+2020-02-28 02:12:03,082 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/icons.png (172.17.0.1) 1.56ms
+2020-02-28 02:12:03,114 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.png (172.17.0.1) 28.91ms
+2020-02-28 02:12:03,128 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/main.png (172.17.0.1) 11.52ms
+2020-02-28 02:12:03,139 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/feat.png (172.17.0.1) 9.41ms
+2020-02-28 02:12:03,164 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/wall.png (172.17.0.1) 21.72ms
+2020-02-28 02:12:03,190 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.css (172.17.0.1) 6.58ms
+2020-02-28 02:12:03,195 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/style.css (172.17.0.1) 2.75ms
+2020-02-28 02:12:03,200 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/gui.png (172.17.0.1) 3.02ms
+2020-02-28 02:12:03,204 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/game.js (172.17.0.1) 1.92ms
+2020-02-28 02:12:03,241 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/dungeon_renderer.js (172.17.0.1) 2.59ms
+2020-02-28 02:12:03,256 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/options.js (172.17.0.1) 5.29ms
+2020-02-28 02:12:03,260 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/display.js (172.17.0.1) 1.65ms
+2020-02-28 02:12:03,271 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/messages.js (172.17.0.1) 5.60ms
+2020-02-28 02:12:03,281 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/enums.js (172.17.0.1) 6.38ms
+2020-02-28 02:12:03,289 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/minimap.js (172.17.0.1) 4.04ms
+2020-02-28 02:12:03,297 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/text.js (172.17.0.1) 2.77ms
+2020-02-28 02:12:03,302 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/menu.js (172.17.0.1) 2.77ms
+2020-02-28 02:12:03,306 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/player.js (172.17.0.1) 2.79ms
+2020-02-28 02:12:03,310 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/mouse_control.js (172.17.0.1) 1.23ms
+2020-02-28 02:12:03,316 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui.js (172.17.0.1) 2.70ms
+2020-02-28 02:12:03,327 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/ui-layouts.js (172.17.0.1) 5.54ms
+2020-02-28 02:12:03,335 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/cell_renderer.js (172.17.0.1) 4.47ms
+2020-02-28 02:12:03,339 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/map_knowledge.js (172.17.0.1) 1.81ms
+2020-02-28 02:12:03,345 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-dngn.js (172.17.0.1) 2.37ms
+2020-02-28 02:12:03,351 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/util.js (172.17.0.1) 3.79ms
+2020-02-28 02:12:03,355 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/view_data.js (172.17.0.1) 1.23ms
+2020-02-28 02:12:03,363 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/monster_list.js (172.17.0.1) 2.83ms
+2020-02-28 02:12:03,367 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/textinput.js (172.17.0.1) 1.95ms
+2020-02-28 02:12:03,418 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-player.js (172.17.0.1) 49.00ms
+2020-02-28 02:12:03,445 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-main.js (172.17.0.1) 24.38ms
+2020-02-28 02:12:03,453 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/scroller.js (172.17.0.1) 2.97ms
+2020-02-28 02:12:03,470 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-gui.js (172.17.0.1) 12.93ms
+2020-02-28 02:12:03,474 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/focus-trap.js (172.17.0.1) 2.19ms
+2020-02-28 02:12:03,478 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-icons.js (172.17.0.1) 1.44ms
+2020-02-28 02:12:03,481 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfos.js (172.17.0.1) 1.19ms
+2020-02-28 02:12:03,500 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-floor.js (172.17.0.1) 17.81ms
+2020-02-28 02:12:03,521 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-wall.js (172.17.0.1) 17.65ms
+2020-02-28 02:12:03,530 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/tileinfo-feat.js (172.17.0.1) 7.43ms
+2020-02-28 02:12:03,545 INFO: 200 GET /gamedata/d9a91f808363f0e9b36590f54d1454f284f984b7/simplebar.js (172.17.0.1) 12.97ms
+2020-02-28 02:13:04,243 INFO: #0     P1     Crawl terminated.
+2020-02-28 02:13:04,247 WARN: #0     Didn't know how to handle msg: ui_state_sync
+2020-02-28 02:13:19,720 INFO: #0     Socket closed. (316710 bytes sent, compression ratio 89%)
